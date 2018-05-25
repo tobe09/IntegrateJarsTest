@@ -1,0 +1,543 @@
+/**
+ * @Author: Ajayi Segun & Eke Cindy 5th September 2017
+ */
+
+.navbar-custom 
+{
+	background: #3B5BB3;
+}
+
+.navbar-header .navbar-brand span
+{
+	color: white;
+}
+
+.icon-position
+{
+	position: relative;
+	bottom: 6px;
+}
+
+.sidebar{
+	background: #3B5BB3;
+}
+
+.sidebar_menulist
+{
+	font-size: 0.875em;
+	color: #f5f5f5;
+}
+
+.sidebar ul.nav li a 
+{
+	height : 35px;
+	line-height: 15px;
+}
+
+.sidebar ul.nav li.parent ul li a 
+{
+	font-size: 0.857em;
+	height : 22px;
+	line-height: 10px;
+	margin-left: 20px;
+	padding-top: 3px;
+}
+
+.sidebar ul.nav a:hover, .sidebar ul.nav li.parent ul li a:hover 
+{
+	background-color:#f5f5f5;
+}
+
+.sidebar ul.nav li.fund-active a, .sidebar ul.nav li.fund-active a:hover
+{
+	background-color: #f5f5f5;
+	color: #3B5BB3;
+}
+
+.sidebar ul.nav .active a, .sidebar ul.nav .active > a:hover, .sidebar ul.nav .active > a:focus, .sidebar ul.nav li.parent a.active:focus 
+{
+	background-color: #f5f5f5;
+}
+
+.dropdown
+{
+	background: none;
+}
+
+.dropdown:hover
+{
+  color: #fff;
+  background: none; 
+  }
+
+.btn-editted
+{
+	background-color: #3B5BB3;
+	color: white;
+}
+
+.sidebar ul.nav ul.children li a.active
+{
+	background-color: #3B5BB3;
+	color: #f5f5f5;
+}
+
+.sidebar ul.nav ul.children li a.active:hover
+{
+	background-color: #3B5BB3;
+	color: #f5f5f5;
+}
+
+.main-con-position
+{
+	position: absolute;
+	top: 20px;
+	z-index: 2;
+	height: 70%;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 5px;
+}
+
+.img-con{
+	position: relative;
+	z-index: 1;
+}
+
+.breadcrumb
+{
+	background: transparent;
+}
+
+.breadcrumb > li + li:before 
+{
+	color: #3B5BB3;
+}
+
+.breadcrumb li a
+{
+	color: #fff;
+}
+
+.breadcrumb li a .active
+{
+	color: #3B5BB3;
+}
+
+label{
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+input.form-control
+{
+	height: 35px;
+}
+
+.textfield
+{
+	font-size: 12px;
+}
+
+.text-display
+{
+	margin-top: 20px;
+}
+
+.text-display2
+{
+	margin-top: 10px;
+}
+
+.text-area
+{
+	height: 90px;
+	width: 100%;
+	border: none;
+	border-radius: 4px;
+	padding-top: 3px;
+	margin-bottom: 10px;
+}
+
+.text-area2
+{
+	height: 50px;
+	width: 100%;
+	border: none;
+	border-radius: 4px;
+	padding-top: 3px;
+	margin-bottom: 10px;
+}
+
+.btn-editted
+{
+	margin-top: 20px;
+}
+
+.panelbody
+{
+	margin-top: -25px;
+}
+
+select
+{
+	margin-top: 2px;
+	height: 33px;
+	border: none;
+    border-radius: 4px;
+}
+
+.acctbal
+{
+	margin-top: 30px;
+	height: 50%;
+	overflow-y: scroll;
+}
+
+.acctbal2 {
+    height: 87%;
+    width: 50%;
+    overflow-y: scroll;
+}
+
+.select-form1
+{
+	width: 100%;
+	margin-top: 10px;
+}
+
+
+/* Nav Pills and Tabs */
+.panelbuild
+{
+	margin-top: -10px;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover
+{
+	background-color: #3B5BB3;
+	color: #fff;
+}
+
+.nav-pills > li a
+{
+	color: #404040;
+}
+
+.nav-pills > li a:hover
+{
+	background-color: #3B5BB3;
+	color: #F8F8F8;
+}
+
+.newaccnt
+{
+	height: 60%;
+}
+
+.btn-set
+{
+	margin-top: 70px;
+}
+
+.modal-header{
+	background-color: #3B5BB3;
+}
+
+.modal-title
+{
+	background-color: #3B5BB3;
+}
+
+.modal-footer{
+	background-color: #3B5BB3;
+}
+
+.cashwthdral
+{
+	margin-top: 30px;
+	height: 40%;
+}
+
+.btn-editted1
+{
+	margin-top: 120px;
+	margin-left: 10px;
+	background-color: #3B5BB3;
+	color: #fff;
+}
+
+.btn-editted2
+{
+	margin-top: 20px;
+	margin-left: 10px;
+	background-color: #3B5BB3;
+	color: #fff;
+}
+
+.form-padding
+{
+	margin-top: 5px;
+}
+
+.form-bottom
+{
+	margin-bottom: 10px;
+}
+
+.menumarg{
+	margin-top: 28px;
+}
+
+.menumarg1{
+	margin-top: 25px;
+}
+
+.headimg{
+	margin-top: -15px;
+}
+
+.headkey{
+	width: 75px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.headkey1{
+	width: 160px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.menufont{
+	color: #3B5BB3;
+    font-weight: bold;
+}
+
+.fundtrans{
+	height: 85%;
+}
+
+.fundtrans1{
+	height: 82%;
+	overflow-y: scroll;
+}
+
+.selectsize{
+	width: 205px;
+}
+
+.selectsize1{
+	width: 180px;
+}
+
+.selectsize2{
+	width: 180px;
+	height: 60px;
+}
+
+.iconpost{
+	text-align: right;
+	margin-top: -6%;
+	color: red;
+}
+
+.iconcol{
+	color: #ff0000;
+}
+
+.transjnr{
+	width: 83%;
+	height: 82%;
+	overflow-y: scroll;
+}
+
+.grploan{
+	width: 81%;
+	height: 82%;
+	overflow-y: scroll;
+}
+
+.bluecolor{
+	height: 4px;
+    border-top: 0;
+    background: #3B5BB3;
+    border-radius: 5px;
+}
+
+.adjust{
+	margin-top: 0px;
+}
+
+.hideform{
+	display: none;
+}
+
+.visform{
+	visibility: hidden;
+}
+
+.other-text{
+	font-color: #3B5BB3;
+	font-size: 0.957em;
+}
+
+.img-holder{
+	width: 120px;
+	height: 120px;
+}
+
+.cust-desc{
+	width: 230px;
+	height: 25px;
+}
+
+.hr-padding
+{
+	position: relative;
+	bottom: 5px;
+}
+
+.h4-edite
+{
+	position: relative;
+	top: 15px;
+}
+
+
+/* New edit - Media Query*/
+
+@media (max-width:1023px) and (min-width:960px)
+{
+	.col-sm-4
+	{
+		width: 34.2%;
+	}
+	
+}
+
+@media (max-width:320px) and (min-width:200px)
+{
+	.header-text
+	{
+	}
+	
+	.navbar-header .navbar-brand span
+       {
+	   font-size: 16px;
+    }
+	
+	.buttom-edit
+	{
+		position: relative;
+		right: 30px;
+	}
+	
+	.barsss
+	{
+		position: relative;
+		bottom: 5px;
+		right: 5px;
+	}
+	
+	.icon-position{
+		position: relative;
+		bottom: 123px;
+		left: 265px;
+	}
+}
+
+@media (max-width:375px) and (min-width:321px)
+{
+	.navbar-header .navbar-brand span
+       {
+	   font-size: 16px;
+    }
+	
+	.buttom-edit
+	{
+		position: relative;
+		right: 30px;
+	}
+	
+	.barsss
+	{
+		position: relative;
+		bottom: 5px;
+		right: 5px;
+	}
+	
+	.icon-position{
+		position: relative;
+		bottom: 62px;
+		left: 30px;
+	}
+}
+
+.personalcust
+{
+	overflow-y: scroll;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

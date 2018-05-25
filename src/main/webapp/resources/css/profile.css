@@ -1,0 +1,36 @@
+/**
+ * @Author: Eke Cindy 6th October 2017
+ */
+
+@charset "ISO-8859-1";
+
+.first
+{
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 1.3em;
+	color: #3B5BB3;
+}
+
+.second
+{
+	font-size: 1.4em;
+	line-height: 100%;
+	letter-spacing: 1px;
+}
+
+.profile-sidebar
+{	
+	color: #3B5BB3;
+}
+
+.profile-details
+{
+	margin-left: -15px;
+	margin-top: 4px;
+}
+
+.profile-infotxt
+{
+	font-size: 0.8em;
+	margin-top: 2px;
+}

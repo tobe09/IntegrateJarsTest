@@ -1,0 +1,13 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	background-image: url("../img/boat.gif");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	 display: block;
+}

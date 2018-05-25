@@ -1,0 +1,215 @@
+/**
+ * @Author: Eke Cindy 5th September 2017
+ */
+
+@charset "ISO-8859-1";
+
+/* FIRST PART : PORTRAIT VIEW  */
+
+/************************************************
+	Handling Nav Header, Menu Bar and Background Image
+ ************************************************/
+ 
+ 
+ @media (max-width:414px) and (min-width:320px)
+ {
+      .navbar-top-links > li a .fa-home
+      {
+         display: none;
+      }
+      
+      .navbar-header .navbar-brand span
+      {
+         margin-top: 4px;
+      }
+      
+      .profile-sidebar
+      {
+         height: 100px;
+      }
+      
+      .profile-details
+      {
+         position: absolute;
+         top: 60px;
+      }
+      
+      body
+      {
+	     background-image: url("../img/imgpsh_fullsize.jpg") ;
+	     display:block;
+	     min-width:100%;
+	     height:auto;
+      }
+ }
+ 
+  
+  @media only screen and (max-width: 320px)
+  {
+      .icon-position
+      {
+         bottom: 66px;
+         left: 140px;
+      }
+  }
+  
+  @media (max-width: 384px) and (min-width:360px)
+  {
+      .icon-position
+      {
+         bottom: 66px;
+         left: 230px;
+      }
+  }
+ 
+  @media (max-width:500px) and (min-width:412px)
+  {
+     .icon-position
+      {
+         text-align: right;
+      }
+  }
+ 
+ 
+ 
+ 
+ /************************************************
+	Handling Form Container and Form
+ ************************************************/
+ 
+  @media (max-width:411px) and (min-width:320px)
+  {
+     .main-con-position
+      {
+         height: 380px;
+         background-color: rgba(255, 255, 255, 0.4);
+      }
+      
+      col-sm-8 .row img
+      {
+         display: none;
+      }
+      
+      .breadcrumb .nodisplay
+      {
+         display: none;
+      }
+      
+      .breadcrumb .active
+      {
+         color: #484848;
+         font-weight: bold;
+      }
+      
+      .acctballabel
+      {
+         margin-top: 30px;
+         position: relative;
+         right: 20px;
+      }
+      
+      .acctlablhead
+      {
+         position: relative;
+         right: 20px;
+      }
+      
+      input.form-control
+      {
+	     margin-bottom: 5px;
+      }
+      
+      .btn-margin, .bluecolor, .form-margin
+      {
+         position: relative;
+         bottom: 40px;
+      }
+      
+      .sp_small
+      {
+         overflow-y: scroll;
+      }
+  }
+
+ 
+ 
+ 
+
+
+
+/* New edit - Media Query*/
+
+/* @media (max-width:1023px) and (min-width:960px)
+{
+	.col-sm-4
+	{
+		width: 34.2%;
+	}
+	
+}
+
+@media (max-width:320px) and (min-width:200px)
+{
+	.header-text
+	{
+	}
+	
+	.navbar-header .navbar-brand span
+       {
+	   font-size: 16px;
+    }
+	
+	.buttom-edit
+	{
+		position: relative;
+		right: 30px;
+	}
+	
+	.barsss
+	{
+		position: relative;
+		bottom: 5px;
+		right: 5px;
+	}
+	
+	.icon-position{
+		position: relative;
+		bottom: 123px;
+		left: 265px;
+	}
+}
+
+@media (max-width:375px) and (min-width:321px)
+{
+	.navbar-header .navbar-brand span
+       {
+	   font-size: 16px;
+    }
+	
+	.buttom-edit
+	{
+		position: relative;
+		right: 30px;
+	}
+	
+	.barsss
+	{
+		position: relative;
+		bottom: 5px;
+		right: 5px;
+	}
+	
+	.icon-position{
+		position: relative;
+		bottom: 62px;
+		left: 30px;
+	}
+} */
+
+
+
+
+
+
+
+

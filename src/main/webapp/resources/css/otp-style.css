@@ -1,0 +1,99 @@
+@charset "ISO-8859-1";
+
+body
+{
+	background-image: url("../img/orbitlite1.jpg") ;
+	display:block;
+	min-width:100%;
+	height:auto;
+}
+
+.panelcustom
+{
+	background-color: rgba(255, 255, 255, 0.3);
+	height: 60%;
+	position: absolute;
+	z-index: 1;
+	top: 150px;
+	border-radius: 5px;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.text1
+{
+	font-size: 1.2em;
+	color: #484848;
+}
+
+.text2
+{
+	color: #484848;
+}
+
+.text3 a
+{
+	font-size: 1.2em;
+	color: #3B5BB3;
+}
+
+.text3 a:hover
+{
+	color: #3B5BB3;
+	text-decoration: none;
+}
+
+.pininput
+{
+	width: 15%;
+}
+
+
+/************************************************
+	OTP Page Media Query
+ ************************************************/
+
+@media (max-width:420px) and (min-width:320px)
+{
+   .pininput
+   {
+	  width: 30%;
+   }
+   
+   .panelcustom
+   {
+      padding-top: 30px;
+	  height: 65%;
+   }
+   
+   .panelcustom
+   {
+      top: 107px;
+   }
+}
+
+@media (max-width:415px) and (min-width:412px)
+{
+   .panelcustom
+   {
+      top: 150px;
+   }
+   
+   .pininput
+   {
+	  width: 25%;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
