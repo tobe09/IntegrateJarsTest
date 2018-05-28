@@ -1,6 +1,5 @@
 package com.neptune.supernova;
 
-import java.io.Serializable;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -83,6 +82,7 @@ public class TestController {
 		}
 	}
 
+	//Created maven local repository. Setup jars using maven setup, environment path variable setup and maven install-file syntax. Added dependencies.
 	
 	static String pascalCase(String s){
 		return s.substring(0, 1).toUpperCase() + s.substring(1);
@@ -96,6 +96,10 @@ public class TestController {
 		return "home";
 	}
 
+	interface ResponseData{
+		String toString();
+		String getResponseCode();
+	}
 	
 	// NAME INQUIRY STARTS HERE
 	@RequestMapping(value = "/nameInquirySubmit", method = RequestMethod.GET)
@@ -106,25 +110,33 @@ public class TestController {
 				
 		NameInquiryResponseData inquiryResponse = port.nameenquirysingleitem(inquiryRequest);
 
-		String responseCode = inquiryResponse.getResponseCode();
-
-		String msg = Constants.getResponseMessage(responseCode);
-		String response = "";
-		if (responseCode.equals("00"))
-			response = getResultSet(inquiryResponse, "NESingleResponse");
-				
+		return getResponse(inquiryResponse, "NESingleResponse");
+	}
+	// NAME INQUIRY ENDS HERE
+	
+	private String getResponse(Object responseData, String shortName) {
 		ArrayList<String> result = new ArrayList<String>();
-		result.add(msg);
-		result.add(response);
 
-		System.out.println(responseCode);
-		System.out.println(result.get(0));
-		System.out.println(result.get(1));
+		try {
+			String responseCode = responseData.getClass().getMethod("getResponseCode").invoke(responseData).toString();
+
+			String msg = Constants.getResponseMessage(responseCode);
+			String response = "";
+			if (responseCode.equals("00"))
+				response = getResultSet(responseData, "NESingleResponse");
+
+			result.add(msg);
+			result.add(response);
+
+			System.out.println(responseCode);
+			System.out.println(result.get(0));
+			System.out.println(result.get(1));
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
 
 		return gson.toJson(result);
 	}
-	// NAME INQUIRY ENDS HERE
-
 	
 	// ACCOUNT BLOCK STARTS HERE
 	@RequestMapping(value = "/accountBlock", method = RequestMethod.GET)
@@ -609,14 +621,14 @@ public class TestController {
 	
 	static String getValue(Field field, Object obj) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException{
 		String methodName = "get" + pascalCase(field.getName());
-		@SuppressWarnings("unchecked")
 		Method method = obj.getClass().getMethod(methodName);
 		String val = method.invoke(obj) == null ? "null" : method.invoke(obj).toString();		
 		
 		return val;
 	}
 	
-	private String objectToXml(Object response, Class cls) {
+	@SuppressWarnings("unused")
+	private String objectToXml(Object response, @SuppressWarnings("rawtypes") Class cls) {
         XStream xstream = new XStream();
         xstream.alias(cls.getSimpleName(), cls);
         return xstream.toXML(response); 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>TestMasterPage</name>
+	<name>IntegrationTest</name>
 	<comment></comment>
 	<projects>
 		<project>com.neptune.supernova</project>
